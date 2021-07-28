@@ -1,0 +1,30 @@
+{
+  "name": "unit-nodejs-project",
+  "version": "1.0.0",
+  "description": "a simple unit testing using mocha",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KrystsinaAlesiyuk/unit-nodejs-project.git"
+  },
+  "keywords": [
+    "mocha",
+    "unit",
+    "testing"
+  ],
+  "author": "krystsina_alesiyuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KrystsinaAlesiyuk/unit-nodejs-project/issues"
+  },
+  "homepage": "https://github.com/KrystsinaAlesiyuk/unit-nodejs-project#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "eslint": "^7.31.0",
+    "eslint-config-google": "^0.14.0",
+    "mocha": "^9.0.3"
+  }
+}

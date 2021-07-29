@@ -1,20 +1,18 @@
 {
     "env": {
-        "browser": true,
+        "commonjs": true,
         "es2021": true,
         "node": true
     },
     "extends": [
         "google"
     ],
-    "parser": "babel-eslint",
+
     "parserOptions": {
-        "ecmaVersion": 12,
-        "sourceType": "module"
+        "ecmaVersion": 12
     },
     "rules": {
-        "linebreak-style": ["error", "windows"],
-        "indent": "off",
-        "eslint space-before-function-paren": [2, { "anonymous": "always", "named": "always" }]
+        "max-len":"off"
     }
 }
+

@@ -3,8 +3,22 @@
   "version": "1.0.0",
   "description": "a simple unit testing using mocha",
   "main": "index.js",
+  "nyc": {
+    "reporter": "html",
+    "check-coverage": true,
+    "branches": 15,
+    "lines": 40,
+    "functions": 40
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run coverage"
+    }
+  },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "lint": "eslint ./",
+    "coverage": "nyc npm run test"
   },
   "repository": {
     "type": "git",
@@ -25,6 +39,9 @@
     "chai": "^4.3.4",
     "eslint": "^7.31.0",
     "eslint-config-google": "^0.14.0",
-    "mocha": "^9.0.3"
+    "husky": "^7.0.1",
+    "mocha": "^9.0.3",
+    "mochawesome": "^6.2.2",
+    "nyc": "^15.1.0"
   }
 }
